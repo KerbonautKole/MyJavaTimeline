@@ -1,3 +1,6 @@
+import java.util.Scanner;
+
+
 public class Main {
     static String reset = "\u001B[0m";
     static String darkred = "\u001B[48;2;75;9;20m";
@@ -52,7 +55,14 @@ public class Main {
     };
 
     public static void main(String[] args) {
-        drawCharacter();
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("How many? ");
+        int n = scanner.nextInt();
+        System.out.println();
+        for (int i = 0; i < n; i++) {
+            drawCharacter();
+        }
+
 
 
 
